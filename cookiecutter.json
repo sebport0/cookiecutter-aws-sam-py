@@ -1,0 +1,23 @@
+{
+  "project_name": "project",
+  "sam_config": "samconfig",
+  "sam_template": "template",
+  "sam_s3_bucket": "my-bucket",
+  "sam_s3_prefix": "my-prefix",
+  "region": "us-west-2",
+  "sam_confirm_changeset": true,
+  "sam_stack_name": "project",
+  "default_env": "dev",
+  "python_runtime": [
+    "python3.7",
+    "python3.8",
+    "python3.9"
+  ],
+  "lambda_timeout": 10,
+  "lambda_memorysize": 128,
+  "lambda_architecture": [
+    "arm64",
+    "x86_64"
+  ],
+  "lambda_auto_publish_alias": true
+}

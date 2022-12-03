@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: ""
+
+Globals:
+  Function:
+    Runtime: {{cookiecutter.python_runtime}}
+    Timeout: {{cookiecutter.lambda_timeout}}
+    MemorySize: {{cookiecutter.lambda_memorysize}}
+    Architectures:
+      - {{cookiecutter.lambda_architecture}}
+    {% if cookiecutter.lambda_auto_publish_alias == True -%}
+    AutoPublishAlias: live
+    {% endif %}
+
+Mappings:
+
+Parameters:
+
+Resources:
+
+Outputs:

@@ -1,0 +1,12 @@
+version = 0.1
+
+[{{cookiecutter.default_env}}.build.parameters]
+[{{cookiecutter.default_env}}.deploy.parameters]
+s3_bucket = {{cookiecutter.sam_s3_bucket}}
+s3_prefix = {{cookiecutter.sam_s3_prefix}}
+region = {{cookiecutter.region}}
+confirm_changeset = {{cookiecutter.sam_confirm_changeset|slugify}}
+capabilities = "CAPABILITY_IAM"
+stack_name = {{cookiecutter.sam_stack_name}}
+parameter_overrides = ""
+tags = ""
