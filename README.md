@@ -1,6 +1,6 @@
 # AWS SAM-Py Cookiecutter
 
-A cookiecutter to start buikding AWS SAM applications(with Python).
+A cookiecutter template to start building AWS SAM applications(with Python).
 
 ## Getting Started
 
